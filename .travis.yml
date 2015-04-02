@@ -51,7 +51,7 @@ after_success:
 - export PATH=$(find /usr/local/android-sdk/ -name zipalign -type f| head -1 | sed -e 's/\/zipalign//g'):$PATH
 - zipalign -v 4 platforms/android/ant-build/CarCloud-release-unsigned.apk platforms/android/ant-build/CarCloud.apk
 after_failure:
-- echo "After failure stage"
+- echo "After failusre stage"
 after_script:
 - echo "After script stage"
 deploy:
